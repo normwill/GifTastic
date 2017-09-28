@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	$('button').on('click', function(){
 		var actors = $(this).data('name');
-		var queryURL = "https://api.giphy.com/search?q=" + actors + "&api_key=9df48d3cd8834e9faea004c4d05c2666";
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + actors + "&lang=en&api_key=9df48d3cd8834e9faea004c4d05c2666";
 
 		$.ajax({
 			url: queryURL,
